@@ -1,0 +1,132 @@
+/* global diclaration */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* body styling */
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(96,58,22,0.5);
+}
+header:hover{
+  background-color: rgb(96,58,22);
+}
+
+header .logo .header-img{
+  width: 70px;
+}
+/* nav bar */
+.nav-bar ul li{
+  display: inline-block;
+  padding-right: 3em;
+}
+.nav-bar ul li a{
+  color: #fff;
+  transition: font-size .5s ease-in, font-weight .5s ease-out, text-shadow .5s ease-in-out;
+}
+.nav-bar ul li a:hover{
+  font-size: 110%;
+  font-weight: 800;
+  text-shadow: 0 0 10px #fff;
+}
+/* main */
+/* home div */
+.home{
+  padding-top: 74px;
+  height: 100vh;
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url(../img/home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.home h1{
+  font-size: 500%;
+  margin: 15%; 
+  transition: text-shadow .5s ease-in-out;
+}
+.home h1:hover{
+  text-shadow: 1px 1px 2px #000, 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(139, 0, 0);
+}
+
+/* breed div */
+.breed{
+  padding: 74px;
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.breed h1,p{
+  color: #fff;
+}
+.breed h1{
+  font-size: 250%;
+}
+.breed p{
+  padding-bottom: 5%;
+  font-size: 150%;
+}
+.breed .breed-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.breed .breed-list .dog{
+  margin: 1%;
+  border: 1.5px solid #000;
+  width: 225px;
+  background-color: rgba(255,255,255,0.5);
+}
+.breed .breed-list .dog:hover{
+  background-color: rgb(255,255,255);
+}
+.breed .breed-list .dog h3{
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+}
+.breed .breed-list .dog img{
+  width: 100%;
+}
+
+
+
+
+
+.dog-vid{
+  padding-top: 74px;
+  clear: both;
+  text-align: center;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.adopt{
+  padding-top: 74px;
+  height: 100vh;
+  text-align: center;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

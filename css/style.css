@@ -4,18 +4,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+}
 li{
   list-style: none;
 }
-
 a{
   text-decoration: none;
-}
-
-/* body styling */
-body{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* header */
@@ -58,7 +59,7 @@ header .logo .header-img{
   background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url(../img/home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
+  
 }
 .home h1{
   font-size: 500%;
@@ -73,12 +74,11 @@ header .logo .header-img{
 .breed{
   padding: 74px;
   text-align: center;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgba(255,255,255,0.4);
 }
 .breed h1,p{
-  color: #fff;
+  color:#000;
+  
 }
 .breed h1{
   font-size: 250%;
@@ -96,37 +96,41 @@ header .logo .header-img{
   margin: 1%;
   border: 1.5px solid #000;
   width: 225px;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(0,0,0,0.5);  
 }
 .breed .breed-list .dog:hover{
-  background-color: rgb(255,255,255);
+  background-color: rgb(0,0,0);
 }
 .breed .breed-list .dog h3{
-  color: #fff;
-  background-color: rgba(0,0,0,0.5);
+  color: #000;
+  background-color: rgba(255,255,255,0.6);
 }
 .breed .breed-list .dog img{
   width: 100%;
 }
 
-
-
-
-
+/* Dog vid div */
 .dog-vid{
-  padding-top: 74px;
-  clear: both;
+  padding: 74px;
   text-align: center;
-  background-image: url(../img/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+}
+.dog-vid h1{
+  font-size: 250%;
+  padding: 2%;
 }
 
+/* adopt div */
 .adopt{
-  padding-top: 74px;
+  padding: 74px;
   height: 100vh;
-  text-align: center;
-  background-image: url(../img/background.jpg);
+  background-image: url(/img/adopt.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: center;
+}
+.adopt h1{
+  font-size: 250%;
+  margin: 10%;
 }

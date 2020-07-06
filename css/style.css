@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url("https://raw.githubusercontent.com/ArmaanRaut/Product-Landing-Page/master/img/background.jpg");
+  background-image: url(../img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -113,7 +113,7 @@ header .logo .header-img{
   padding-top: 74px;
   height: 100vh;
   text-align: center;
-  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url("https://raw.githubusercontent.com/ArmaanRaut/Product-Landing-Page/master/img/home.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url(../img/home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -188,7 +188,7 @@ header .logo .header-img{
 .adopt{
   padding: 74px;
   height: 100vh;
-  background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url("https://raw.githubusercontent.com/ArmaanRaut/Product-Landing-Page/master/img/adopt.jpg");
+  background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url(/img/adopt.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;

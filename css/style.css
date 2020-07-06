@@ -50,6 +50,64 @@ header .logo .header-img{
   font-weight: 800;
   text-shadow: 0 0 10px #fff;
 }
+.nav-bar .checkbtn{
+  font-size: 30px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+@media (max-width:952px){
+  header .logo .header-img{
+    width: 80px;
+  }
+  .nav-bar ul li a{
+    font-size: 16px;
+  }
+}
+
+@media(max-width:858px){
+  header:hover{
+    background-color:  rgba(96,58,22,0.9);
+  }
+  .nav-bar .checkbtn{
+    display: block;
+  }
+  .nav-bar .checkbtn:hover{
+    font-size: 35px;
+    font-weight: 800;
+    text-shadow: 0 0 10px #fff;
+  }
+  .nav-bar ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(96,58,22,.7);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .nav-bar ul li{
+    display: block;
+    margin: 4rem;
+  }
+  .nav-bar ul li a{
+    font-size: 40px;
+  }
+  .nav-bar ul li a:hover{
+    font-size: 50px;
+    font-weight: 800;
+    text-shadow: 0 0 10px #fff;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
 /* main */
 /* home div */
 .home{
@@ -59,7 +117,6 @@ header .logo .header-img{
   background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url(../img/home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 .home h1{
   font-size: 500%;
@@ -100,6 +157,7 @@ header .logo .header-img{
   transition: background-color 0.5s ease, border-color 0.95s ease-in-out, box-shadow 0.5s ease-in-out; 
 }
 .breed .breed-list .dog:hover{
+  width: 275px;
   background-color: rgb(0,0,0);
   border-color: rgb(66,27,19);
   box-shadow: 0 0 0 0.25rem rgba(66,27,19,0.5);
@@ -127,7 +185,6 @@ header .logo .header-img{
   max-width: 750px;
   width: 100%;
 }
-
 /* adopt div */
 .adopt{
   padding: 74px;

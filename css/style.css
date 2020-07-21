@@ -61,6 +61,7 @@ header .logo .header-img{
 }
 /* responsive navbar */
 @media (max-width:952px){
+  /* for phone */
   header .logo .header-img{
     width: 80px;
   }
